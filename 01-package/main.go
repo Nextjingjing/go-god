@@ -9,6 +9,7 @@ func main() {
 	println("Hello, main!")
 
 	hello.Greet()
+	hello.Greet2()
 	// This will cause a compile-time error
 	// hello.privateFunction()
 
