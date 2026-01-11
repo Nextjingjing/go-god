@@ -28,11 +28,8 @@ Repository นี้ไม่มีการสอนพื้นฐานภา
 git clone https://github.com/Nextjingjing/go-god.git
 cd go-god
 ```
-หากใช้ vscode ผมแนะนำให้ Extension `Markdown All in One` นี้
 
-![alt text](docs/images/md_all_in_one.png)
-
-เพื่ออำนวยความสะดวกในการอ่าน Documents ต่างๆ
+กด Preview `README.md` ของแต่ละบทเพื่ออำนวยความสะดวกในการอ่าน Documents ต่างๆ หรือจะอ่านใน Github ก็ได้
 
 ![alt text](docs/images/preview_md.png)
 
