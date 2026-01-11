@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Nextjingjing/go-god/hello"
-	"github.com/Nextjingjing/go-god/parent/child"
+	"github.com/Nextjingjing/01-package/go-god/hello"
+	"github.com/Nextjingjing/01-package/go-god/parent/child"
 )
 
 func main() {
