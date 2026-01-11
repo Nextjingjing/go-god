@@ -30,11 +30,11 @@ cd go-god
 ```
 หากใช้ vscode ผมแนะนำให้ Extension `Markdown All in One` นี้
 
-![alt text](docs\images\md_all_in_one.png)
+![alt text](docs/images/md_all_in_one.png)
 
 เพื่ออำนวยความสะดวกในการอ่าน Documents ต่างๆ
 
-![alt text](docs\images\preview_md.png)
+![alt text](docs/images/preview_md.png)
 
 ## การเรียน
 เข้าไปในโฟลเดอร์บทเรียนที่คุณสนใจ และเปิดเอกสารอ่านได้ โดยการอ่านเอกสารต้องประกอบกับการอ่านโค้ดในไฟล์ต่างๆ ซึ่งผมจะเขียนบอกไว้อยู่แล้วให้ไปอ่าน
