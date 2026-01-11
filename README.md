@@ -8,9 +8,9 @@
 7. Project Structure & Go Module
 8. GORM
 9. Hexagonal Architecture
-10. Fiber 
-11. gRPC
-12. Kafka
-13. Testing
-14. Dockerfile & Prometheus
-15. Go Concurrency
+10. Fiber
+11. Go Concurrency
+12. gRPC
+13. Kafka
+14. Testing
+15. Dockerfile & Prometheus
