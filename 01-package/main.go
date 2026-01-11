@@ -1,6 +1,9 @@
 package main
 
-import "github.com/Nextjingjing/go-god/hello"
+import (
+	"github.com/Nextjingjing/go-god/hello"
+	"github.com/Nextjingjing/go-god/parent/child"
+)
 
 func main() {
 	println("Hello, main!")
@@ -12,4 +15,6 @@ func main() {
 	hello.PublicFunction()
 	hello.ExportedPrivateFunction()
 	println(hello.GetPackageVar())
+
+	child.ChildFunc()
 }
