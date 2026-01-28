@@ -1,8 +1,8 @@
 # หัวข้อ
 1. [Package](https://github.com/Nextjingjing/go-god/tree/main/01-package)
 2. [Struct](https://github.com/Nextjingjing/go-god/tree/main/02-struct)
-3. Interface
-4. Error Handling & Logging
+3. [Interface](https://github.com/Nextjingjing/go-god/tree/main/03-interface)
+4. [Error Handling & Logging](https://github.com/Nextjingjing/go-god/tree/main/04-error-handling)
 5. Context in Go
 6. Environment Variables
 7. Project Structure & Go Module
