@@ -8,6 +8,7 @@ Struct ใน GO คือเป็นชนิดของข้อมูลป
 
 ## การสร้าง Struct 
 ให้คุณเปิดไปที่ไฟล์ `./user/user.go` คุณจะเห็นมีโค้ดส่วนหนึ่งคือ
+
 ```go
 package user
 
@@ -20,6 +21,7 @@ type User struct {
 นี้คือวิธีการประกาศโครงสร้างของ Struct ของเราว่าต้องมี Field อะไรบ้าง?
 
 ### การสร้าง Instance ของ Struct
+ให้คุณเปิดไปที่ไฟล์ `./main.go` คุณจะเห็นมีโค้ดส่วนหนึ่งคือ
 ```go
 func main() {
 	u := user.User{
@@ -30,6 +32,7 @@ func main() {
 }
 ```
 และสามารถเข้าถึง Attribute ได้โดยการ `instance.attributeName`
+
 ```go
 func main() {
     ...
@@ -40,6 +43,8 @@ func main() {
 ```
 
 ## การสร้าง Method ไปผูกกับ Struct
+ให้คุณเปิดไปที่ไฟล์ `./main.go` คุณจะเห็นมีโค้ดส่วนหนึ่งคือ
+
 ```go
 func (u *User) GetID() int {
 	return u.id
@@ -59,7 +64,7 @@ func NewUser(id int, name string, email string) User {
 ```
 - Method `GetID` เป็น Getter ของค่า id ที่เป็น Private
 - Method `SetID` เป็น Setter ของค่า id ที่เป็น Private
-- Method `NewUser` เป็นคล้าย Constructor ในภาษา OOP ใช้สร้าง Instance ของ `User`
+- Function `NewUser` เป็นคล้ายๆ Constructor ในภาษา OOP ใช้สร้าง Instance ของ `User`
 
 ### การเรียกใช้ Method
 ```go
