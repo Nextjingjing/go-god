@@ -3,13 +3,13 @@
 2. [Struct](https://github.com/Nextjingjing/go-god/tree/main/02-struct)
 3. [Interface](https://github.com/Nextjingjing/go-god/tree/main/03-interface)
 4. [Error Handling & Logging](https://github.com/Nextjingjing/go-god/tree/main/04-error-handling)
-5. Context in Go
-6. Environment Variables
-7. Project Structure & Go Module
-8. GORM
-9. Hexagonal Architecture
-10. Fiber
-11. Go Concurrency
+5. Go Concurrency
+6. Context
+7. Environment Variables
+8. Project Structure & Go Module
+9. GORM
+10. Hexagonal Architecture
+11. Fiber
 12. gRPC
 13. Kafka
 14. Testing
