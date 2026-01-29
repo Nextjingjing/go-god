@@ -7,6 +7,7 @@
 Error handling คือการจัดการกับ Error แต่ขอบอกไว้ก่อนกนะครับว่า GO ไม่มี Try-Catch !!! แล้วจะมีวิธีจัดการกับ Error ยังไงเราไปชมกัน
 
 ## การ Throw Error ใน GO
+ให้คุณเปิดไปที่ไฟล์ `./main.go` คุณจะเห็นมีโค้ดส่วนหนึ่งคือ
 ```go
 func Sqrt(f float64) (float64, error) {
 	if f < 0 {
