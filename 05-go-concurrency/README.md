@@ -16,4 +16,4 @@
 ### เนื่องจากในบทนี้การแบ่งหัวข้อเรียนแบบค่อยๆ เป็นค่อยๆ ไปจะช่วยให้ทุกท่านเข้าใจบทเรียนได้ดีที่สุดผมจึงแบ่งเป็นหลายๆ หัวข้อดังนี้
 
 ## สารบัญ
-- [Tutorial 1 Goroutine]()
+- [Tutorial 1 Goroutine](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-1)

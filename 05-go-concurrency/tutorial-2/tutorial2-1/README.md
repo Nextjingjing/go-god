@@ -1,4 +1,4 @@
-# Part 2.1 Chanel
+# Part 2.1 go channel
 
 ## ความเข้าใจ Thread
 โดยทั่วไปแล้ว Thread นั้นจะแชร์ Variable ร่วมกัน แต่ใช้แยก Program counter (PC) กัน
