@@ -1,4 +1,4 @@
-# part 3.1 Sync package Mutex
+# part 3.2 Sync package Mutex
 
 ## Mutex คืออะไร?
 Mutex คือกลไกลป้องกันการทำงานในส่วน Critical section พร้อมๆ กันทำให้ทำงานผิดพลาดได้
