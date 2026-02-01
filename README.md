@@ -3,7 +3,7 @@
 2. [Struct](https://github.com/Nextjingjing/go-god/tree/main/02-struct)
 3. [Interface](https://github.com/Nextjingjing/go-god/tree/main/03-interface)
 4. [Error Handling & Logging](https://github.com/Nextjingjing/go-god/tree/main/04-error-handling)
-5. Go Concurrency
+5. [Go Concurrency](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency)
 6. Context
 7. Environment Variables
 8. Project Structure & Go Module

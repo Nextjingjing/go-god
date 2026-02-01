@@ -17,3 +17,11 @@
 
 ## สารบัญ
 - [Tutorial 1 Goroutine](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-1)
+- Tutorial 2 Chanel
+  - [2.1 Problem](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-2/tutorial2-1)
+  - [2.2 Chanel](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-2/tutorial2-2)
+- Tutorial 3 Sync package
+  - [WaitGroup](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-3/tutorial-3-1)
+  - [Mutex](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-3/tutorial-3-2)
+  - [Condition Variable](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-3/tutorial-3-3)
+- [Deadlock](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency/tutorial-4)
