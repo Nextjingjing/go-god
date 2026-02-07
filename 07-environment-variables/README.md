@@ -27,6 +27,11 @@ C:\Program Files\Go\bin;c:\Users\snext\AppData\Roaming\Code\User\globalStorage\g
 ```
 
 ## การอ่านค่าจากไฟล์ .env
+### การติดตั้ง
+```bash
+go get github.com/joho/godotenv
+```
+### การใช้งาน
 ```go
 package main
 

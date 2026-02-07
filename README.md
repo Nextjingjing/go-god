@@ -5,7 +5,7 @@
 4. [Error Handling & Logging](https://github.com/Nextjingjing/go-god/tree/main/04-error-handling)
 5. [Go Concurrency](https://github.com/Nextjingjing/go-god/tree/main/05-go-concurrency)
 6. [Context](https://github.com/Nextjingjing/go-god/tree/main/06-context)
-7. Environment Variables
+7. [Environment Variables](https://github.com/Nextjingjing/go-god/tree/main/07-environment-variables)
 8. Project Structure & Go Module
 9. GORM
 10. Hexagonal Architecture
