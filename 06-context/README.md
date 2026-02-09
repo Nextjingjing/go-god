@@ -5,7 +5,7 @@
 - บทที่ 5 Go concurrency
 
 ## Context คืออะไร? 
-context คือ แพ็คเกจที่ช่วยให้สามารถจัดการการทำงานของ `Goroutine` ช่วยให้สามารถจัดการ `Deadline/Timeout`, `Cancellation` และสุดท้ายยังช่วย `Values Passing` 
+context คือ แพ็คเกจที่ช่วยให้สามารถจัดการการทำงานของ `Goroutine หรือ Function` ช่วยให้สามารถจัดการ `Deadline/Timeout`, `Cancellation` และสุดท้ายยังช่วย `Values Passing` 
 
 ## `context.Background()` และ `context.TODO()`
 ใช้สร้าง Parent Context ซึ่งเป็น Context ว่างๆ `(Empty Context)` ที่ยังไม่กำหนด `Deadline/Timeout`, `Cancellation` และ `Values Passing` เลย โดยมีจุดต่างกันดังนี้
