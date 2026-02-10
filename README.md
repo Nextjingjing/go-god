@@ -7,9 +7,9 @@
 6. [Context](https://github.com/Nextjingjing/go-god/tree/main/06-context)
 7. [Environment Variables](https://github.com/Nextjingjing/go-god/tree/main/07-environment-variables)
 8. [Project Structure & Go Module](https://github.com/Nextjingjing/go-god/tree/main/08-project-structure)
-9. GORM
-10. Hexagonal Architecture
-11. Fiber
+9. [GORM](https://github.com/Nextjingjing/go-god/tree/main/09-gorm)
+10. Fiber
+11. Hexagonal Architecture
 12. gRPC
 13. Kafka
 14. Testing
