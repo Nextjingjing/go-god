@@ -262,3 +262,36 @@ app.Get("/api/error", func(c fiber.Ctx) error {
 ```
 - `fiber.NewError(code int, message ...string)` เพื่อ Throw Error ที่ fiber สามารถจัดการได้
 - [เอกสาร](https://docs.gofiber.io/guide/error-handling) หากต้องการตั้งค่าอะไรให้เข้ามาอ่านได้ที่นี้
+
+### 10. การทำ Group
+เพื่อจัดกลุ่ม Route ให้สะอาดมากยิ่งขึ้น
+```go
+package routes
+
+import "github.com/gofiber/fiber/v3"
+
+func SomeRoute(route fiber.Router) {
+	route.Get("/", func(c fiber.Ctx) error {
+		return c.SendString("Hello from some route!")
+	})
+
+	route.Get("/2", func(c fiber.Ctx) error {
+		return c.SendString("Hello2 from some route!")
+	})
+
+	route.Get("/3", func(c fiber.Ctx) error {
+		return c.SendString("Hello3 from some route!")
+	})
+}
+
+```
+
+```go
+// routes
+api := app.Group("/api")
+routes.SomeRoute(api.Group("/some-route"))
+```
+
+ผลลัพธ์คือ
+
+![รูป router](/docs/images/fiber-router.png)
