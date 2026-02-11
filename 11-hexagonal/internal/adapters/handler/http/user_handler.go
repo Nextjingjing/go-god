@@ -30,7 +30,10 @@ func (h *userHandler) CreateUser(c fiber.Ctx) error {
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 	}
-	return c.Status(fiber.StatusCreated).JSON(user)
+	return c.Status(fiber.StatusCreated).JSON(dto.UserResponseDTO{
+		ID:   user.ID,
+		Name: user.Name,
+	})
 }
 
 func (h *userHandler) GetUserByID(c fiber.Ctx) error {
@@ -44,7 +47,10 @@ func (h *userHandler) GetUserByID(c fiber.Ctx) error {
 	if err != nil {
 		return c.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": err.Error()})
 	}
-	return c.JSON(user)
+	return c.JSON(dto.UserResponseDTO{
+		ID:   user.ID,
+		Name: user.Name,
+	})
 }
 
 func (h *userHandler) GetAllUsers(c fiber.Ctx) error {
@@ -52,7 +58,14 @@ func (h *userHandler) GetAllUsers(c fiber.Ctx) error {
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 	}
-	return c.JSON(users)
+	response := make([]dto.UserResponseDTO, 0)
+	for _, user := range users {
+		response = append(response, dto.UserResponseDTO{
+			ID:   user.ID,
+			Name: user.Name,
+		})
+	}
+	return c.JSON(response)
 }
 func (h *userHandler) UpdateUser(c fiber.Ctx) error {
 	idStr := c.Params("id")
@@ -67,5 +80,8 @@ func (h *userHandler) UpdateUser(c fiber.Ctx) error {
 	if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 	}
-	return c.JSON(user)
+	return c.JSON(dto.UserResponseDTO{
+		ID:   user.ID,
+		Name: user.Name,
+	})
 }
