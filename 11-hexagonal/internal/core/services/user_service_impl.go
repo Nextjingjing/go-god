@@ -20,7 +20,7 @@ func (s *userServiceImpl) CreateUser(name string) (*domain.User, error) {
 	return s.repo.Save(user)
 }
 
-func (s *userServiceImpl) GetUserByID(id string) (*domain.User, error) {
+func (s *userServiceImpl) GetUserByID(id uint) (*domain.User, error) {
 	return s.repo.FindByID(id)
 }
 
@@ -28,6 +28,6 @@ func (s *userServiceImpl) GetAllUsers() ([]*domain.User, error) {
 	return s.repo.FindAll()
 }
 
-func (s *userServiceImpl) UpdateUser(id string, name string) (*domain.User, error) {
+func (s *userServiceImpl) UpdateUser(id uint, name string) (*domain.User, error) {
 	return s.repo.Save(&domain.User{ID: id, Name: name})
 }

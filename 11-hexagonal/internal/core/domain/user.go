@@ -2,6 +2,6 @@ package domain
 
 // User entity
 type User struct {
-	ID   string
+	ID   uint
 	Name string
 }
