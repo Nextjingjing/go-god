@@ -17,11 +17,23 @@ func NewUserRepositoryImpl(db *gorm.DB) *userRepositoryImpl {
 
 func (r *userRepositoryImpl) Save(user *domain.User) (*domain.User, error) {
 	userModel := &UserModel{
+		ID:   user.ID,
 		Name: user.Name,
 	}
-	if err := r.db.Create(userModel).Error; err != nil {
+	// check if user exists
+	if user.ID != 0 {
+		var existing UserModel
+		err := r.db.First(&existing, user.ID).Error
+		// if not found, reset ID to 0 to create new record
+		if err != nil {
+			userModel.ID = 0
+		}
+	}
+
+	if err := r.db.Save(userModel).Error; err != nil {
 		return nil, err
 	}
+
 	return &domain.User{
 		ID:   userModel.ID,
 		Name: userModel.Name,
