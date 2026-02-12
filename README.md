@@ -9,7 +9,7 @@
 8. [Project Structure & Go Module](https://github.com/Nextjingjing/go-god/tree/main/08-project-structure)
 9. [GORM](https://github.com/Nextjingjing/go-god/tree/main/09-gorm)
 10. [Fiber](https://github.com/Nextjingjing/go-god/tree/main/10-fiber)
-11. Hexagonal Architecture
+11. [Hexagonal Architecture](https://github.com/Nextjingjing/go-god/tree/main/11-hexagonal)
 12. gRPC
 13. Kafka
 14. Testing
