@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package calculator.v1;
+
+option go_package = "./internal/pb/";
+
+// CalculatorService defines the gRPC service for performing basic arithmetic operations.
+service CalculatorService {
+    // Add number1 and number2 and return the result.
+    rpc Add(CalculationRequest) returns (CalculationResponse);
+    // Subtract number2 from number1 and return the result.
+    rpc Subtract(CalculationRequest) returns (CalculationResponse);
+    // Multiply number1 and number2 and return the result.
+    rpc Multiply(CalculationRequest) returns (CalculationResponse);
+    // Divide number1 by number2 and return the result. If number2 is zero, an error should be returned.
+    rpc Divide(CalculationRequest) returns (CalculationResponse);
+}
+
+// CalculationRequest contains the two numbers to be calculated.
+message CalculationRequest {
+    double number1 = 1;
+    double number2 = 2;
+}
+
+// CalculationResponse contains the result of the calculation.
+message CalculationResponse {
+    double result = 1;
+}
