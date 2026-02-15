@@ -10,7 +10,7 @@
 9. [GORM](https://github.com/Nextjingjing/go-god/tree/main/09-gorm)
 10. [Fiber](https://github.com/Nextjingjing/go-god/tree/main/10-fiber)
 11. [Hexagonal Architecture](https://github.com/Nextjingjing/go-god/tree/main/11-hexagonal)
-12. gRPC
+12. [gRPC](https://github.com/Nextjingjing/go-god/tree/main/12-grpc)
 13. Kafka
 14. Testing
 15. Dockerfile & Prometheus
