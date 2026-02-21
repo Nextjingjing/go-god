@@ -4,20 +4,21 @@ import (
 	"context"
 	"log"
 
+	"github.com/Nextjingjing/go-god/13-kafka/internal/utils"
 	"github.com/segmentio/kafka-go"
 )
 
 func main() {
-	// to create topics when auto.create.topics.enable='true'
-	conn, err := kafka.DialLeader(context.Background(), "tcp", "localhost:29092", "my-topic", 0)
-	if err != nil {
-		panic(err.Error())
-	}
-	conn.Close()
+	broker := []string{"localhost:29092", "localhost:39092"}
+	topic := "my-topic"
+
+	// Ensures that a Kafka topic exists
+	// if not, then create topic via controller.
+	err := utils.EnsureTopic(broker, topic, 3, 2)
 
 	w := &kafka.Writer{
-		Addr:     kafka.TCP("localhost:29092", "localhost:39092"),
-		Topic:    "my-topic",
+		Addr:     kafka.TCP(broker...),
+		Topic:    topic,
 		Balancer: &kafka.LeastBytes{},
 	}
 
