@@ -12,14 +12,14 @@ func main() {
 	broker := []string{"localhost:29092", "localhost:39092"}
 	topic := "my-topic"
 
-	// Ensures that a Kafka topic exists
+	// Ensures that a Kafka topic exists.
 	// if not, then create topic via controller.
 	err := utils.EnsureTopic(broker, topic, 3, 2)
 
 	w := &kafka.Writer{
 		Addr:     kafka.TCP(broker...),
 		Topic:    topic,
-		Balancer: &kafka.LeastBytes{},
+		Balancer: &kafka.Hash{}, //
 	}
 
 	err = w.WriteMessages(context.Background(),
@@ -34,6 +34,14 @@ func main() {
 		kafka.Message{
 			Key:   []byte("Key-C"),
 			Value: []byte("Two!"),
+		},
+		kafka.Message{
+			Key:   []byte("Key-C"),
+			Value: []byte("Three!"),
+		},
+		kafka.Message{
+			Key:   []byte("Key-C"),
+			Value: []byte("Four!"),
 		},
 	)
 	if err != nil {
