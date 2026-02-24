@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Build / misc
+*.log
+tmp/
+dist/
+bin/
+
+# Docs
+*.md
+
+# Env files (secrets)
+.env
+*.env
+
+# OS junk
+.DS_Store
+
+# Makefile
+Makefile
