@@ -12,7 +12,7 @@
 11. [Hexagonal Architecture](https://github.com/Nextjingjing/go-god/tree/main/11-hexagonal)
 12. [gRPC](https://github.com/Nextjingjing/go-god/tree/main/12-grpc)
 13. [Kafka](https://github.com/Nextjingjing/go-god/tree/main/13-kafka)
-14. [Unit Testing (Testify)](https://github.com/Nextjingjing/go-god/tree/main/14-testing/internal/core/services)
+14. [Unit Testing (Testify)](https://github.com/Nextjingjing/go-god/tree/main/14-testing)
 15. Dockerfile & Prometheus
 
 # คำนำ
