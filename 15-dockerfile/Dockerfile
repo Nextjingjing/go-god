@@ -1,6 +1,7 @@
-FROM golang:tip-alpine3.22
+# ---------- Stage 1: Build ----------
+FROM golang:tip-alpine3.22 AS builder
 
-WORKDIR /app
+WORKDIR /src
 
 COPY go.mod go.sum ./
 
@@ -10,7 +11,10 @@ COPY . ./
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o /go-app
 
-EXPOSE 8080
+# ---------- Stage 2: Final ----------
+FROM scratch
 
-# Run
-CMD ["/go-app"]
+WORKDIR /app
+COPY --from=0 /go-app /bin/go-app
+
+CMD [ "/bin/go-app" ]
