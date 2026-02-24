@@ -13,7 +13,7 @@
 12. [gRPC](https://github.com/Nextjingjing/go-god/tree/main/12-grpc)
 13. [Kafka](https://github.com/Nextjingjing/go-god/tree/main/13-kafka)
 14. [Unit Testing (Testify)](https://github.com/Nextjingjing/go-god/tree/main/14-testing)
-15. Dockerfile & Prometheus
+15. [Dockerfile](https://github.com/Nextjingjing/go-god/tree/main/15-dockerfile)
 
 # คำนำ
 Repository นี้ไม่มีการสอนพื้นฐานภาษา Go เพราะฉะนั้นผู้อ่านต้องศึกษาด้วยตนเอง Repository ต้องการให้ผู้อ่านเรียนรู้เรื่องที่สำคัญเป็นส่วนๆ เพื่อให้สามารถทบทวนได้ง่ายๆ และเตรียมความพร้อมให้ผู้อ่านทำโปรเจคใหญ่ๆ เช่น Microservice, Backend ต่างๆ ได้ และผมพยายามให้เป็นแต่ละบทเรียนเรียบง่ายที่สุดเท่าที่จะเป็นไปได้
